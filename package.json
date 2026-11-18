@@ -1,0 +1,20 @@
+{
+  "name": "datamint",
+  "version": "1.0.0",
+  "description": "B2B lead enrichment pipeline via Apollo.io on GCP (Cloud Function + BigQuery)",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "functions-framework --target=app --source=src",
+    "test": "node --test tests/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage tests/*.test.js"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.7.0",
+    "@google-cloud/functions-framework": "^3.4.0",
+    "axios": "^1.6.0"
+  },
+  "license": "MIT"
+}
